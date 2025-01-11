@@ -1,0 +1,46 @@
+/* DescriptionSection.css */
+.description-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .description-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tab.active {
+    background-color: #28a745;;
+    color: #fff;
+    border-color: #28a745;
+  }
+  

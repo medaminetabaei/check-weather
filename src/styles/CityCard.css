@@ -1,0 +1,103 @@
+/* Container for all city cards */
+.city-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center; /* Center-align cards */
+  gap: 20px; /* Add spacing between cards */
+  padding: 20px;
+}
+
+/* Individual city card */
+.city-card {
+  width: 350px; /* Adjust card width for consistency */
+  min-height: 400px; /* Ensure consistent card height */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff; /* White background */
+  text-align: center; /* Center align text inside */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  margin: 10px; /* Space between individual cards */
+}
+
+.city-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Placeholder for when an image is unavailable */
+.placeholder {
+  width: 100%;
+  height: 250px; /* Match image height */
+  background-color: #f7f7f7; /* Light gray background */
+  color: #888; /* Neutral placeholder text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* City image styling */
+.city-image {
+  width: 100%; /* Full width of the card */
+  height: 250px; /* Fixed height for consistent layout */
+  object-fit: cover; /* Scale image properly without distortion */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* City name styling */
+.city-card h3 {
+  margin: 15px 0; /* Space above and below the name */
+  font-size: 20px; /* Slightly larger font for the city name */
+  font-weight: bold; /* Bold font for prominence */
+  color: #333; /* Neutral text color */
+}
+
+/* Weather information container */
+.weather-info {
+  margin-top: 15px; /* Add spacing above the weather info */
+  text-align: left; /* Align text to the left for readability */
+  font-size: 16px; /* Standard font size */
+  color: #555; /* Neutral text color */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Add spacing between weather details */
+}
+
+/* Individual weather item */
+.weather-item {
+  display: flex;
+  align-items: center; /* Align icons and text */
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Weather icons */
+.weather-icon {
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Specific icon colors */
+.temp-icon {
+  color: #ff5733; /* Temperature icon color (red/orange) */
+}
+
+.cloud-icon {
+  color: #00bfff; /* Cloud icon color (blue) */
+}
+
+.humidity-icon {
+  color: #1e90ff; /* Humidity icon color (blue) */
+}
+
+.wind-icon {
+  color: #32cd32; /* Wind icon color (green) */
+}
+
+/* Loading text */
+.loading-text {
+  font-size: 18px; /* Slightly larger font size */
+  color: #888; /* Neutral loading text color */
+  margin-top: 20px; /* Space above loading text */
+}

@@ -1,0 +1,72 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  position: fixed; /* Fixes the navbar on top */
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.navbar-brand a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  
+  letter-spacing: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  color: #28a745; /* Green hover effect */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+.join {
+  border: 1px solid #28a745;
+  color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.join:hover {
+  /* background-color: #28a745; */
+  color: #fff;
+}
+
+.avis {
+  /* background-color: #28a745; */
+  border: 1px solid #28a745;
+  color: #28a745;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.avis:hover {
+  /* background-color: #218838; */
+}
+
+.logo-image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
